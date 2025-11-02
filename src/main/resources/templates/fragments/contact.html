@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="contact-section">
+    <section class="section contact" id="contact">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="section-title-container text-center">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Have a project or idea? Let's collaborate and create something amazing!
+                </p>
+            </div>
+
+            <div class="contact-container flex flex-wrap gap-8">
+                <!-- Contact Info -->
+                <div class="contact-info w-full md:w-1/2">
+                    <h3 class="contact-heading">Let's Build Something Together</h3>
+                    <p class="contact-text">
+                        I'm open to new projects, collaborations, or just a friendly chat about ideas. Reach out via any of the channels below.
+                    </p>
+                    <div class="contact-links flex flex-col gap-4 mt-4">
+                        <a href="tel:+919876543210" class="contact-link flex items-center gap-3">
+                            <i class="fas fa-phone text-primary"></i>
+                            <div>
+                                <span class="contact-link-label">Phone</span><br>
+                                <span class="contact-link-value">+91 6372516923</span>
+                            </div>
+                        </a>
+                        <a href="mailto:manaspatra0218@gmail.com" class="contact-link flex items-center gap-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <div>
+                                <span class="contact-link-label">Email</span><br>
+                                <span class="contact-link-value">manaspatra0218@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/manas-patra-0b32aa198?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9OjAyOxPTIuUTPsHd7i7Vg%3D%3D" target="_blank" class="contact-link flex items-center gap-3">
+                            <i class="fab fa-linkedin-in text-primary"></i>
+                            <div>
+                                <span class="contact-link-label">LinkedIn</span><br>
+                                <span class="contact-link-value">Manas Patra</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form w-full md:w-1/2">
+                    <form action="https://api.web3forms.com/submit" method="post" class="space-y-4">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Your message..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary flex items-center gap-2">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>
